@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet"> 
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+
+
+        <title>Tumelo Moipolai</title>
+    </head>
+  
+    <body>
+        <!---HEADER---->
+        <header>
+                <ul class="main-nav">
+                    <li><a href="#home"> Home</a></li>  
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#skills"> Skills</a></li>
+                    <li><a href="#contac"> Contacts</a></li>
+                </ul>
+        </header> 
+
+        <!---HOME SECTION--->
+        <section id="home" class="home">
+            <div class="name">
+                <h1>Tumelo Brian Moipolai</h1>
+                <h5>Web & mobile App Developer</h5>
+            </div>
+        </section>
+          <!--end of home -->
+
+        <!--ABOUT SECTION-->
+        <section id="about" class="">
+            <div class="section-title">
+                <h2>About</h2>
+            </div>
+            <div class="about-info">
+                <p>I am a BSc Computer Science-Geography under-graduate. I am ambitious very hard
+                 working and highly self-motivated individual with a desire for success in everything 
+                 I do, and passionate about learning new things. In future I want to see myself as a more 
+                skilled individual in the ICT industry as this will reflect my hunger to learn, 
+                knowledge already acquired, commitment and dedication that comes along daily with 
+                hard work, challenges and more learning. My interest is mainly in web, software
+                development and Geographical information systems(GIS). I have indulged in several
+                projects including during my undergraduate program and personal project meaning I
+                have touched on several technologies available. </p>
+                <a href="#" class="downloadbtn">Download Resume</a>
+            </div>
+            <div class="timeline">
+                <div class="col">
+                    <span> 2015 - 2019</span>
+                    <h6>I am a BSc Computer Science-Geography under-graduate. </h6>
+                </div>
+                <div class="col">
+                    <span> 2015 - 2019</span>
+                    <h6>I am a BSc Computer Science-Geography under-graduate. </h6>
+                </div>
+                <div class="col">
+                    <span> 2015 - 2019</span>
+                    <h6>I am a BSc Computer Science-Geography under-graduate. </h6>
+                </div>
+                <div class="col">
+                    <span> 2015 - 2019</span>
+                    <h6>I am a BSc Computer Science-Geography under-graduate. </h6>
+                </div>
+            </div>
+        </section>
+        <!--end of about -->
+
+        <!--SKILLS SECTION-->
+        <section id="skills" class="skills">   <!--dont forget to change class name from services to skills and skills infor-->
+            <div class="section-title">
+                <h2>skills</h2>
+            </div>
+            <div class="skills-info">
+                <div class="col">
+                    <img src="{% static 'img/1.PNG' %}">
+                    <h3>Web development</h3>
+                    <p>I am a BSc Computer Science-Geography under-graduate.</p>
+                </div>
+                <div class="col">
+                    <img src="{% static 'img/2.PNG' %}">
+                    <h3>Web development</h3>
+                    <p>I am a BSc Computer Science-Geography under-graduate.</p>
+                </div>
+                <div class="col">
+                    <img src="{% static 'img/3.PNG' %}">
+                    <h3>Web development</h3>
+                    <p>I am a BSc Computer Science-Geography under-graduate.</p>
+                </div>
+                <div class="col">
+                    <img src="{% static 'img/4.PNG' %}">
+                    <h3>Web development</h3>
+                    <p>I am a BSc Computer Science-Geography under-graduate.</p>
+                </div>
+            </div>
+        </section>
+          <!--end of about -->
+
+        <!--contact SECTION-->
+        <section id="contact" class="contact">
+            <div class="section-title">
+                <h2>social links</h2>
+            </div>
+            <div class="social-info">
+                <div class="col">
+                        <span><img src="{% static 'img/fb-icon.PNG' %}"></span>
+                </div>
+                <div class="col">
+                        <span><img src="{% static 'img/in-icon.PNG' %}"></span>
+                </div>
+                <div class="col">
+                        <span><img src="{% static 'img/tw-icon.PNG' %}"></span>
+                </div>
+                <div class="col">
+                        <span> <img src="{% static 'img/gp-icon.PNG' %}"></span>
+                </div>
+            </div>
+        </section>
+        <!--end of contact -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/particle-script.js"></script>
+        <script type="text/javascript">
+            
+
+
+        </script>
+
+    </body>
+</html>
