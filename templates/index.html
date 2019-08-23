@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" 
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
 
 
@@ -16,18 +18,20 @@
         <!---HEADER---->
         <header>
                 <ul class="main-nav">
-                    <li><a href="#home"> Home</a></li>  
-                    <li><a href="#about"> About</a></li>
-                    <li><a href="#skills"> Skills</a></li>
-                    <li><a href="#contac"> Contacts</a></li>
+                    <li>
+                        <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1s" href="#home"> Home</a>
+                        <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.2s" href="#about"> About</a>
+                        <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.3s" href="#skills"> Skills</a>
+                        <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.4s" href="#contac"> Contacts</a>
+                    </li>
                 </ul>
         </header> 
 
         <!---HOME SECTION--->
-        <section id="home" class="home">
+        <section id="home" class="home wow fadeIn" data-wow-duration="2s" data-wow-delay="1.2s">
             <div class="name">
-                <h1>Tumelo Brian Moipolai</h1>
-                <h5>Web & mobile App Developer</h5>
+                <h1 class="wow fadeInUp" data-wow-duration="3s" data-wow-delay="1.9s">Tumelo Brian Moipolai</h1>
+                <h5 class="wow fadeInDown" data-wow-duration="4s" data-wow-delay="1.4s">Web & mobile App Developer</h5>
             </div>
         </section>
           <!--end of home -->
@@ -35,10 +39,10 @@
         <!--ABOUT SECTION-->
         <section id="about" class="">
             <div class="section-title">
-                <h2>About</h2>
+                <h2 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">About</h2>
             </div>
             <div class="about-info">
-                <p>I am a BSc Computer Science-Geography under-graduate. I am ambitious very hard
+                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".9s">I am a BSc Computer Science-Geography under-graduate. I am ambitious very hard
                  working and highly self-motivated individual with a desire for success in everything 
                  I do, and passionate about learning new things. In future I want to see myself as a more 
                 skilled individual in the ICT industry as this will reflect my hunger to learn, 
@@ -123,14 +127,10 @@
         <!--end of contact -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-        <script src="js/particle-script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" 
+        integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
         <script type="text/javascript">
-            
-
-
+        new WOW().init();
         </script>
-
     </body>
 </html>
