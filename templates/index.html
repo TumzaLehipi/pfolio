@@ -15,6 +15,7 @@
     </head>
   
     <body>
+        <div id= "particles-js"></div>
         <!---HEADER---->
         <header>
                 <ul class="main-nav">
@@ -22,7 +23,7 @@
                         <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1s" href="#home"> Home</a>
                         <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.2s" href="#about"> About</a>
                         <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.3s" href="#skills"> Skills</a>
-                        <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.4s" href="#contac"> Contacts</a>
+                        <a class="wow fadeInDown" data-wow-duration=".5s" data-wow-delay="1.4s" href="#contact"> Contacts</a>
                     </li>
                 </ul>
         </header> 
@@ -77,26 +78,26 @@
         <!--SKILLS SECTION-->
         <section id="skills" class="skills">   <!--dont forget to change class name from services to skills and skills infor-->
             <div class="section-title">
-                <h2>skills</h2>
+                <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">skills</h2>
             </div>
             <div class="skills-info">
                 <div class="col">
-                    <img src="{% static 'img/1.PNG' %}">
+                    <img class="wow fadeInDown" data-wow-duration="1.3s" data-wow-delay=".9s" src="{% static 'img/1.PNG' %}">
                     <h3>Web development</h3>
                     <p>I am a BSc Computer Science-Geography under-graduate.</p>
                 </div>
                 <div class="col">
-                    <img src="{% static 'img/2.PNG' %}">
+                    <img  class="wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="1.1s" src="{% static 'img/2.PNG' %}">
                     <h3>Web development</h3>
                     <p>I am a BSc Computer Science-Geography under-graduate.</p>
                 </div>
                 <div class="col">
-                    <img src="{% static 'img/3.PNG' %}">
+                    <img class="wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="1.2s" src="{% static 'img/3.PNG' %}">
                     <h3>Web development</h3>
                     <p>I am a BSc Computer Science-Geography under-graduate.</p>
                 </div>
                 <div class="col">
-                    <img src="{% static 'img/4.PNG' %}">
+                    <img class="wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="1.3s" src="{% static 'img/4.PNG' %}">
                     <h3>Web development</h3>
                     <p>I am a BSc Computer Science-Geography under-graduate.</p>
                 </div>
@@ -129,8 +130,20 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" 
         integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" 
+        integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
+        <script src="{% static 'js/particle-script.js' %}"></script>
         <script type="text/javascript">
         new WOW().init();
+        $(window).scroll(function(){
+            var sticky = $("header");
+            if ($(window).scrollTop() >= 100){
+                sticky.addClass("fixed");
+            } else {
+                sticky.removeClass("fixed");
+            }
+            
+        });
         </script>
     </body>
 </html>
