@@ -50,12 +50,12 @@ particlesJS('particles-js',
         "enable": true,
         "distance": 300,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.2,
         "width": 2
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 2,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -85,7 +85,7 @@ particlesJS('particles-js',
         "grab": {
           "distance": 800,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.3
           }
         },
         "bubble": {
