@@ -62,12 +62,13 @@ table {
 
 /*header styles*/
 header{
+	margin: auto;
 	position: absolute;
 	top: 0;
 	left: 0;
 	widows: 100%;
 	text-align: center;
-	padding: 25px 0;
+	padding: 25px 0px;
 	z-index: 99;
 }
 header ul li a{
@@ -104,7 +105,8 @@ section{
 	 display:  flex;
 	 justify-content: center;
 	 align-items: flex-end;
-	 background: url(../img/0.jpg) no-repeat;
+	 background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/0.jpg) no-repeat;
+	 opacity: 1;
 	 background-size: cover;
 	 background-position: center;
 	 background-color: #34495e;
